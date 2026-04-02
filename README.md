@@ -84,9 +84,8 @@ Entender cómo mostrar información en consola
 - ¿Qué son las variables?
 - ¿Por qué las usamos?
 - ¿Por qué son importantes?
-- `int`, `double`, `String`
+- `int` y `String`
 - Asignación de valores
-- `var`
 
 **Objetivo:**
 Aprender a guardar y reutilizar datos
