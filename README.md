@@ -99,9 +99,22 @@ Aprender a guardar y reutilizar datos
 - `"".toLowerCase()`
 - `Math.pow(base, exponente)`
 - `Integer.parseInt(string)`
+- `scanner.nextLine()`
 
 **Objetivo:**
 Entender que es el retorno y como son las funciones que devuelven cosas.
+
+### Sesión 04
+
+**Temas:**
+
+- Tipos booleanos
+- ¿Qué son los booleanos?
+- ¿Para qué sirven?
+- Operadores de comparación
+
+**Objetivo:**
+Entender que son los booleanos, clase importante antes de entrar a la estructura `if-else`.
 
 ---
 
