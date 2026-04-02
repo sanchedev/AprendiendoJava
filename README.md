@@ -26,6 +26,8 @@ sesion01.ejercicios
 Dentro de `enclase` van a estar los archivos `.java` hechos en clase como modo de demostración.
 Dentro de `ejercicios` va a haber un archivo igual a este en el que verán la lista de ejercicios a hacer y dentro tendrán que colocar sus ejercicios los estudiantes. Cada ejercicio es representada por un paquete de esta manera: `sesion##.ejercicios.ejercicio##`, donde `##` es un número.
 
+---
+
 ## ¿Cómo entregar ejercicios?
 
 ### 1. Haz un fork del repositorio
@@ -63,7 +65,7 @@ Desde GitHub:
 
 ## Sesiones
 
-### 🟢 Sesión 01
+### Sesión 01
 
 **Temas:**
 
@@ -75,7 +77,7 @@ Desde GitHub:
 **Objetivo:**
 Entender cómo mostrar información en consola
 
-### 🟢 Sesión 02
+### Sesión 02
 
 **Temas:**
 
@@ -89,7 +91,7 @@ Entender cómo mostrar información en consola
 **Objetivo:**
 Aprender a guardar y reutilizar datos
 
-### 🟢 Sesión 03
+### Sesión 03
 
 **Temas:**
 
@@ -101,6 +103,8 @@ Aprender a guardar y reutilizar datos
 
 **Objetivo:**
 Entender que es el retorno y como son las funciones que devuelven cosas.
+
+---
 
 ## Consejos
 
