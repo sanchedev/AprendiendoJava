@@ -1,6 +1,6 @@
 # Sesión 03
 
-En esta sesión aprenderemos que son las funciones y el retorno.
+En esta sesión aprenderemos a usar funciones ya existentes y entender qué significa que una función devuelva un valor.
 
 ## Funciones
 
