@@ -118,7 +118,7 @@ Hola
 
 Ahora inténtalo.
 
-Resuelve los ejercicios que se encuentran en la carpeta `ejercicios` y resuelve los máximos que puedas.
+Resuelve los [ejercicios](./ejercicios/README.md) que se encuentran en la carpeta `ejercicios` y resuelve los máximos que puedas.
 
 ## FAQ
 
