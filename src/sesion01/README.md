@@ -169,16 +169,23 @@ Desestructuraremos primero línea por línea.
 `public`: Público hace referencia a que podemos acceder desde otro archivo a esta `clase`. Esencial para poder ejecutar el archivo.
 
 `class`: Recordemos que habíamos creado un `Java Class`. Pues aquí está la `clase`.
+
 `HolaMundo`: Este es el nombre que nosotros le pusimos al archivo. Si cambiamos el nombre del archivo, aquí también cambiaría.
+
 `{`: Esto es importante, hay veces que cuando aparece este símbolo es porque **abre** un bloque de código. Y si abrimos algo, lo tenemos que cerrar, por eso luego veremos que nos encontramos con un `}`.
 
 Segunda línea
 
 `public`: Que se puede acceder de cualquier lado.
+
 `static`: Es estático, no necesitas un proceso para poder acceder porque siempre está ahí.
+
 `void`: Que no regresa nada a cambio.
+
 `main`: Nombre de este `método`.
+
 `(...)`: Ignoremos eso por ahora.
+
 `{`: Abrimos otro bloque más, ahora tenemos dos `}` pendientes.
 
 En resumen, cuando quieres ejecutar un archivo **Java** te obliga a tener esto en tu código porque representa un **punto de entrada** para tu programa. Es decir, el programa se podrá ejecutar desde ese archivo.
