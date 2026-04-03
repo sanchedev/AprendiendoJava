@@ -50,7 +50,7 @@ Este es una de las razones para usar variables.
 
 Ahora cambiemos el código a esto:
 
-```
+```java
 // ...
         String saludo = "Saludo";
         
@@ -82,7 +82,7 @@ Así que cuando usemos la palabra `saludo` sin las comillas en el código veremo
 
 Entonces al hacer
 
-```Java
+```java
 System.out.println(saludo);
 ```
 
@@ -94,7 +94,7 @@ Saludo
 
 Que pasa si ahora reemplazamos el valor de la variable en el código.
 
-```
+```java
 // ...
         String saludo = "Hola";
         
