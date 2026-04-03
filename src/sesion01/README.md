@@ -79,7 +79,7 @@ Inténtalo por tu cuenta.
 Crea un archivo Java Class y llámale `HolaMundo` y pega este código donde coincida:
 
 ```java
-public clases HolaMundo {
+public class HolaMundo {
     public static void main(String[] args) {
         System.out.print("Hola");
         System.out.print("Hola");
@@ -97,7 +97,7 @@ Aquí es donde entra `println`.
 Vuelve a tu archivo `HolaMundo.java` y pon al final de cada `print` un `ln` para que te quede así:
 
 ```java
-public clases HolaMundo {
+public class HolaMundo {
     public static void main(String[] args) {
         System.out.println("Hola");
         System.out.println("Hola");
@@ -122,7 +122,7 @@ Resuelve los ejercicios que se encuentran en la carpeta `ejercicios` y resuelve 
 
 ## FAQ
 
-**¿Cómo es la estructura?**
+### ¿Cómo es la estructura?
 
 Cuando tú quieres imprimir algo en consola usas `print` o `println`.
 
@@ -147,3 +147,46 @@ En cambio el segundo mostraría:
 ```
 2
 ```
+
+### ¿Por qué mi archivo tiene tanto texto si lo acabo de crear?
+
+No te explicaré que es técnicamente cada palabra que pone el archivo pero si puedo ayudarte a entender el porqué está ahí.
+
+Veamos el archivo `HolaMundo.java`
+
+```java
+public clases HolaMundo {
+    public static void main(String[] args) {
+        // Aquí estarían los prints
+    }
+}
+```
+
+Para el ejemplo ignoraremos los `print`s.
+
+Desestructuraremos primero línea por línea.
+
+`public`: Público hace referencia a que podemos acceder desde otro archivo a esta `clase`. Esencial para poder ejecutar el archivo.
+
+`class`: Recordemos que habíamos creado un `Java Class`. Pues aquí está la `clase`.
+`HolaMundo`: Este es el nombre que nosotros le pusimos al archivo. Si cambiamos el nombre del archivo, aquí también cambiaría.
+`{`: Esto es importante, hay veces que cuando aparece este símbolo es porque **abre** un bloque de código. Y si abrimos algo, lo tenemos que cerrar, por eso luego veremos que nos encontramos con un `}`.
+
+Segunda línea
+
+`public`: Que se puede acceder de cualquier lado.
+`static`: Es estático, no necesitas un proceso para poder acceder porque siempre está ahí.
+`void`: Que no regresa nada a cambio.
+`main`: Nombre de este `método`.
+`(...)`: Ignoremos eso por ahora.
+`{`: Abrimos otro bloque más, ahora tenemos dos `}` pendientes.
+
+En resumen, cuando quieres ejecutar un archivo **Java** te obliga a tener esto en tu código porque representa un **punto de entrada** para tu programa. Es decir, el programa se podrá ejecutar desde ese archivo.
+
+Tercera línea
+
+`}`: Cerramos uno
+
+Cuarta línea
+
+`}`: Cerramos el otro
