@@ -67,7 +67,7 @@ Desde GitHub:
 
 ### Sesión 01
 
-(Entrar)[./src/sesion01/README.md]
+[Entrar](./src/sesion01/README.md)
 
 **Temas:**
 
@@ -82,6 +82,8 @@ Entender cómo mostrar información en consola
 
 ### Sesión 02
 
+[Entrar](./src/sesion02/README.md)
+
 **Temas:**
 
 - ¿Qué son las variables?
@@ -95,6 +97,8 @@ Entender cómo mostrar información en consola
 Aprender a guardar y reutilizar datos
 
 ### Sesión 03
+
+[Entrar](./src/sesion03/README.md)
 
 **Temas:**
 
