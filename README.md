@@ -67,6 +67,8 @@ Desde GitHub:
 
 ### Sesión 01
 
+(Entrar)[./src/sesion01/README.md]
+
 **Temas:**
 
 - Instalar y aprender a usar Github Desktop
@@ -75,6 +77,7 @@ Desde GitHub:
 - Aprender a subir ejercicios
 
 **Objetivo:**
+
 Entender cómo mostrar información en consola
 
 ### Sesión 02
@@ -88,6 +91,7 @@ Entender cómo mostrar información en consola
 - Asignación de valores
 
 **Objetivo:**
+
 Aprender a guardar y reutilizar datos
 
 ### Sesión 03
@@ -99,12 +103,25 @@ Aprender a guardar y reutilizar datos
 - `"".toLowerCase()`
 - `Math.pow(base, exponente)`
 - `Integer.parseInt(string)`
-- `scanner.nextLine()`
 
 **Objetivo:**
+
 Entender que es el retorno y como son las funciones que devuelven cosas.
 
 ### Sesión 04
+
+**Temas:**
+
+- Uso del `Scanner`
+- Input-Output
+- Leer la consola
+- Ingresar texto por consola
+
+**Objetivo:**
+
+Entender que es el `Scanner` y como usarlo para pedirle datos al usuario.
+
+### Sesión 05
 
 **Temas:**
 
@@ -114,6 +131,7 @@ Entender que es el retorno y como son las funciones que devuelven cosas.
 - Operadores de comparación
 
 **Objetivo:**
+
 Entender que son los booleanos, clase importante antes de entrar a la estructura `if-else`.
 
 ---
