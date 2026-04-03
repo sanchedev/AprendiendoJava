@@ -4,6 +4,7 @@
 
 - `int` -> números enteros
 - `String` -> cadenas de texto
+- `[tipo] [nombre] = [valor];`
 
 ## Ejercicios
 
