@@ -71,7 +71,7 @@ Por ejemplo `toUpperCase()` transforma el `String` en mayúsculas.
 
 Incluso podemos guardar los datos que nos devuelvan las funciones para usarlas después.
 
-```
+```java
 var saludo = "Buenas tardes";
 var saludoMay = saludo.toUpperCase();
 
@@ -82,7 +82,7 @@ Inclusive así queda más entendible.
 
 :: Aclaración: `saludo.toUpperCase()` es un `String` por eso cuando usamos `var` Java detecta la variable como `String`.
 
-```
+```java
 var saludo = "Buenas tardes";
 
 var saludoMay = saludo.toUpperCase();
@@ -96,7 +96,7 @@ Evidentemente no solo existen estás funciones. Existen miles más. Veamos unas 
 
 ### double Math.pow(double base, double exponente)
 
-```
+```java
 double num = Math.pow(2, 3);
 System.out.println(num);
 ```
