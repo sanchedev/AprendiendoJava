@@ -263,7 +263,7 @@ Aquí el nombre de la variable es `numero` y el nuevo valor es `20`, como este n
 
 Entonces al hacer el segundo `println`, Java revisará el contenido de `numero` y al ver que su valor es `20` se lo dará el `println` y este lo mostrará en pantalla.
 
-Es hora de los (ejercicios)[./ejercicios/README.md].
+Es hora de los [ejercicios](./ejercicios/README.md).
 
 Da lo mejor que puedas
 
