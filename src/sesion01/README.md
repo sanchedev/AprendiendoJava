@@ -155,7 +155,7 @@ No te explicaré que es técnicamente cada palabra que pone el archivo pero si p
 Veamos el archivo `HolaMundo.java`
 
 ```java
-public clases HolaMundo {
+public class HolaMundo {
     public static void main(String[] args) {
         // Aquí estarían los prints
     }
@@ -166,7 +166,7 @@ Para el ejemplo ignoraremos los `print`s.
 
 Desestructuraremos primero línea por línea.
 
-`public`: Público hace referencia a que podemos acceder desde otro archivo a esta `clase`. Esencial para poder ejecutar el archivo.
+`public`: Público hace referencia a que podemos acceder desde otro archivo a esta `class`. Esencial para poder ejecutar el archivo.
 
 `class`: Recordemos que habíamos creado un `Java Class`. Pues aquí está la `clase`.
 
