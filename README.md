@@ -14,7 +14,7 @@ Aquí tienes el progreso de nuestras clases. Haz clic en los enlaces para ir a l
 | [02](./sesion02/README.md) | La Memoria | Variables, Tipos de datos (int, String), Asignación |
 | [03](./sesion03/README.md) | Máquinas de Retorno | Métodos, Math.pow, Integer.parseInt |
 | [04](./sesion04/README.md) | Interacción (Scanner) | new, nextLine(), Entrada de datos |
-| 05 | La Verdad (Booleanos) | Lógica booleana, Operadores de comparación, if-else |
+| [05](./sesion05/README.md) | La Verdad (Booleanos) | Lógica booleana, Operadores de comparación, if-else |
 
 ## Estructura del Proyecto
 
