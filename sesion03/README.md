@@ -1,127 +1,125 @@
-# Sesión 03
+# Sesión 03: Máquinas y Resultados
 
-En esta sesión aprenderemos a usar funciones ya existentes y entender qué significa que una función devuelva un valor.
+Hasta ahora, hemos usado comandos como si fueran hechizos mágicos. Hoy entenderemos qué son realmente: máquinas que procesan información.
 
-## Funciones
+## ¿Qué es una Función?
 
-Puede que te hayas preguntado, ¿Por qué cuando uso `System.out.println` tengo que poner esos paréntesis al final `()`?
+Imagina una licuadora. Tú le introduces fruta (**entrada**), ella hace un proceso interno, y te entrega un jugo (**salida**).
 
-Imagina un máquina.
+En Java, los paréntesis `()` son la entrada de la máquina. Si están vacíos, es una máquina que no necesita nada para arrancar. Si tienen algo dentro, ese es su "ingrediente" o `parámetro`.
 
-La función que tendrá la máquina será la de sumar dos números, por lo que por arriba le tendrás que dar dos números y por abajo te dará un número que será el resultado.
+## El Retorno
 
-Esto es una `función`.
+Hay dos tipos de máquinas en la programación:
 
-Cuando quieres ejecutar esta máquina o como se le dice acá, _llamar a la función_ tienes que poner estos paréntesis `()` al final.
+ * Las que solo hacen una acción: Como `System.out.println`. Le das un texto, lo muestra en consola y listo. **No te "devuelve" nada que puedas guardar.**
+ * Las que te entregan un resultado: Como una calculadora. Le das `2 + 2` y te entrega un `4`. Ese `4` lo puedes guardar en una variable para usarlo después.
 
-Hay funciones que pedirán información externa, a esto le llamamos _parámetros_. Esto podemos decir que son las cosas que le damos a la máquina.
 
-```Java
-System.out.println("Hola");
-```
+## Aclaraciones
 
-Aquí podemos decir que estamos ejecutando la función `System.out.println` con el parámetro `"Hola"`. Y ¿qué hace `println` con lo que le damos? Lo muestra en la consola.
+### Comentarios
 
-```
-Hola
-```
+Corto está sección para hablar sobre los `comentarios`. Estos son partes del código que no se leen ni se ejecutan.
 
-## Funciones que devuelven
+Imagina que tienes que hacer un informe a mano. Los comentarios serían simples Post-Its que pegarías encima y al entregarlo los sacas sin problemas.
 
-Hay dos tipos de funciones, las que devuelven datos y las que no.
+Así que cada que veas un `//` significa que toda esa línea representa un `comentario`.
 
-Por ejemplo, el `System.out.println` es una función que no devuelve datos.
+### Concatenación
 
-Veamos algunas funciones que si retornan cosas.
+Si ves a un `String` seguido de un símbolo más (`+`), significa que se va a concatenar.
 
-Crea un archivo Java `Funciones.java`
+Básicamente, concatenar es unir un texto con algo más.
 
 ```java
-public class Funciones {
-    public static void main(String[] args) {
-        var saludo = "Buenas tardes";
+System.out.println("Hola " + "mundo");
+```
 
-        System.out.println(saludo.toUpperCase());
+Mostrará:
+
+```
+Hola mundo
+```
+
+## Jugando con el texto
+
+Crea un archivo llamado `PruebaFunciones.java` y vamos a probar funciones que transforman texto.
+
+A estas funciones que "viven" dentro de un objeto (como un `String`) las llamamos Métodos.
+
+```java
+public class PruebaFunciones {
+    public static void main(String[] args) {
+        String nombre = "java es genial";
+
+        // 1. Usamos el método .toUpperCase()
+        // Esta máquina recibe el texto y te DEVUELVE el mismo texto en mayúsculas.
+        String nombreMayus = nombre.toUpperCase();
+
+        System.out.println("Original: " + nombre);
+        System.out.println("En mayúsculas: " + nombreMayus);
     }
 }
 ```
 
-Si ejecutamos esto veremos:
+**Pruébalo.**
 
-```
-BUENAS TARDES
-```
+Fíjate que usamos un punto `.` para entrar a las herramientas de nombre.
 
-**¿Qué está pasando aquí?**
+ * nombre.toUpperCase() -> "Dame lo que hay en nombre pero en grande".
+ * nombre.toLowerCase() -> "Dame lo que hay en nombre pero en pequeño".
 
-Ya deberías saber que `saludo` contiene `"Buenas tardes"` que es un `String`.
 
-La función `saludo.toUpperCase()` es una función que devuelve el `String` en mayúsculas, si `saludo` era `"Buenas tardes"`, ahora será `"BUENAS TARDES"`.
+## Matemática (Math)
 
-Ahora al resultado de esta función lo estamos pasando como _parámetro_ a `System.out.println` para verlo por consola.
+Java ya tiene una "caja de herramientas" llena de funciones matemáticas llamada `Math`.
 
-Lo mismo podemos hacer con `saludo.toLowerCase()`. La cual devolverá `buenas tardes`.
-
-Si te das cuenta `saludo` y `toUpperCase` están unidos por un punto. Este punto es una forma de acceder dentro de.
-
-Al hacer `saludo.toUpperCase` estamos accediendo a `toUpperCase` que está dentro de `saludo`. A estos se le llaman `métodos`, funciones que están dentro de otros objetos. A los `métodos` los puedes entender como acciones que puedes realizar con el objeto.
-
-Por ejemplo `toUpperCase()` transforma el `String` en mayúsculas.
-
-`println` muestra mensajes en `System.out` (Salida del sistema) insertando un salto de línea al final.
-
-Incluso podemos guardar los datos que nos devuelvan las funciones para usarlas después.
+Vamos a usar una para potencias:
 
 ```java
-var saludo = "Buenas tardes";
-var saludoMay = saludo.toUpperCase();
-
-System.out.println(saludoMay);
+Math.pow(base, exponente).
 ```
 
-Inclusive así queda más entendible.
 
-:: Aclaración: `saludo.toUpperCase()` es un `String` por eso cuando usamos `var` Java detecta la variable como `String`.
+Añade esto a tu código:
 
 ```java
-var saludo = "Buenas tardes";
+// Queremos calcular 2 elevado al cubo (2^3)
+double resultado = Math.pow(2, 3);
 
-var saludoMay = saludo.toUpperCase();
-System.out.println(saludoMay);
-
-var saludoMin = saludo.toLowerCase();
-System.out.println(saludoMin);
+System.out.println("2 elevado a 3 es: " + resultado);
 ```
 
-Evidentemente no solo existen estás funciones. Existen miles más. Veamos unas cuantas.
+Analicemos:
+ * Math.pow necesita dos ingredientes (parámetros), separados por una coma.
+ * Nos devuelve un `double` (número decimal), por eso lo guardamos en una variable de ese tipo.
 
-### double Math.pow(double base, double exponente)
+
+## De textos a números
+
+A veces recibimos números pero "disfrazados" de texto (por ejemplo, cuando un usuario escribe en un formulario).
+
+Si intentas sumar `"10" + 5`, Java hará un desastre y pegará los textos: `105`.
+
+Para eso usamos `Integer.parseInt()`:
 
 ```java
-double num = Math.pow(2, 3);
-System.out.println(num);
+String textoNumero = "10";
+int numeroReal = Integer.parseInt(textoNumero); // Convierte "10" en el número 10
+
+System.out.println(numeroReal + 5); // Ahora sí saldrá 15
 ```
 
-Si ejecutas esto verás que en consola sale `8`. `Math.pow` es una función que espera dos parámetros, `double base` y `double exponente`. Está devolverá a la `base` elevada al `exponente`.
+## ¿Cómo leer un método?
 
-Aquí la `base` es `2` y el `exponente` es `3`. `2³` es igual a `8`, por lo que devuelve `8`.
+Cuando veas algo como `saludo.toUpperCase()`, léelo así de derecha a izquierda:
 
-Hay que tener en cuenta que esta función devuelve el número como `double`, así que si quieres usarlo como un entero descartando los decimales necesitaras realizar un proceso extra antes.
+ * `()` : Es una acción (ejecútala).
+ * `toUpperCase` : La acción es "convertir a mayúsculas".
+ * `.` : Pertenece a...
+ * `saludo` : El objeto o variable que tiene la información.
 
-### int Integer.parseInt(String numero)
+> Nota: Ten cuidado con el vacío. Si intentas guardar el resultado de una función que no devuelve nada (como `println`), Java se fallará. Esto porque println es como un camión de basura: se lleva el mensaje, lo deja en la consola y se va. No te deja nada en la mano para guardar.
 
-Esta función recibe un parámetro del tipo `String` y devolverá un número `int`.
-
-```java
-var num = Integer.parseInt("10");
-
-System.out.println(num + 5);
-```
-
-Aquí le sumo `5` para demostrar que sí devolvió un número.
-
-```
-15
-```
-
-Ahora ya estás listo para empezar con los [ejercicios](./EJERCICIOS.md).
+Ahora sí estás listo para los [Ejercicios de la Sesión 03](./EJERCICIOS.md).
