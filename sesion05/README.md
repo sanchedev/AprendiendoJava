@@ -42,7 +42,7 @@ Para obtener un booleano, solemos hacer "preguntas" matemáticas. Java nos respo
 
 Es como un guardia de seguridad. Si cumples la regla, te deja pasar al bloque de código.
 
-```
+```java
 int edad = 17;
 
 if (edad >= 18) {
@@ -56,7 +56,7 @@ Si ejecutas esto con `17`, no pasará nada. El código dentro de las llaves { } 
 
 Aquí es donde corregimos el código. El else no lleva condición, porque es lo que ocurre automáticamente cuando el `if` falla.
 
-```
+```java
 int edad = 17;
 
 if (edad >= 18) {
