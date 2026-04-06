@@ -6,55 +6,17 @@ El objetivo es **entender la lógica**, no solo escribir código.
 
 ## ¿Cómo funciona?
 
-- Todas las clases están ubicadas en el paquete `clases`.
-- En cada clase se van a dejar ejercicios para resolver dentro del paquete `ejercicios.sesion##` con el nombre de la persona.
-- Debes enviar tus soluciones mediante **Pull Request (PR)**
-
-Esto será o fue explicado en la Clase 1.
-
----
-
-## Estructura del repositorio
-
-Cada sesión va a ser representada por dos paquete:
-
-```
-sesion01.enclase
-sesion01.ejercicios
-```
-
-Dentro de `enclase` van a estar los archivos `.java` hechos en clase como modo de demostración.
-Dentro de `ejercicios` va a haber un archivo igual a este en el que verán la lista de ejercicios a hacer y dentro tendrán que colocar sus ejercicios los estudiantes. Cada ejercicio es representada por un paquete de esta manera: `sesion##.ejercicios.ejercicio##`, donde `##` es un número.
-
----
+- Todas las explicaciones catalogadas como sesiones se encuentran en cada carpeta que inicia con `sesion`
+- En cada clase se van a dejar ejercicios para resolver.
 
 ## ¿Cómo entregar ejercicios?
 
-### 1. Haz un fork del repositorio
+Si quieres que pueda ver tus repositorios en github haz lo siguiente.
 
-Botón **Fork** (arriba a la derecha en GitHub)
-
-### 3. Resuelve los ejercicios
-
-- No borres archivos existentes
-- Crea o edita los archivos necesarios
-- Un archivo por ejercicio
-
-### 4. Haz commit
-
-Usa la barra lateral para hacer un commit (confirmación) para confirmar que tu progreso está completo.
-Ponle de título "Resolviendo el ejercicio `##`" y en la descripción si quiere recomendaciones o dudas que se tengan.
-
-### 5. Haz push
-
-Usa el botón **Push** en la barra de arriba.
-
-### 6. Crea un Pull Request
-
-Desde GitHub:
-
-- Click en **Compare & pull request**
-- Explica qué hiciste, cómo lo hiciste y lo que sientes que lograste.
+1. Crea un repositorio en github.
+2. Ahí sube todo tu código bien estructurado. (Un paquete por sesión y cada archivo de ejercicio con el nombre `Ejercicio` más el número en dos dígitos del ejercicio, como `Ejercicio01`, `Ejercicio10`, `Ejercicio04`).
+3. Cada que hagas un ejercicio haz un _commit_ y solicita una revisión.
+4. Si tu código está bien, se te felicitará.
 
 ## Reglas
 
@@ -67,7 +29,7 @@ Desde GitHub:
 
 ### Sesión 01
 
-[Entrar](./src/sesion01/README.md)
+[Entrar](./sesion01/README.md)
 
 **Temas:**
 
@@ -82,7 +44,7 @@ Entender cómo mostrar información en consola
 
 ### Sesión 02
 
-[Entrar](./src/sesion02/README.md)
+[Entrar](./sesion02/README.md)
 
 **Temas:**
 
@@ -98,7 +60,7 @@ Aprender a guardar y reutilizar datos
 
 ### Sesión 03
 
-[Entrar](./src/sesion03/README.md)
+[Entrar](./sesion03/README.md)
 
 **Temas:**
 
@@ -113,6 +75,8 @@ Aprender a guardar y reutilizar datos
 Entender que es el retorno y como son las funciones que devuelven cosas.
 
 ### Sesión 04
+
+[Entrar](./sesion04/README.md)
 
 **Temas:**
 

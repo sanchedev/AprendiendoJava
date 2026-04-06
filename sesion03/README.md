@@ -12,9 +12,9 @@ La función que tendrá la máquina será la de sumar dos números, por lo que p
 
 Esto es una `función`.
 
-Cuando quieres ejecutar esta máquina o como se le dice acá, *llamar a la función* tienes que poner estos paréntesis `()` al final.
+Cuando quieres ejecutar esta máquina o como se le dice acá, _llamar a la función_ tienes que poner estos paréntesis `()` al final.
 
-Hay funciones que pedirán información externa, a esto le llamamos *parámetros*. Esto podemos decir que son las cosas que le damos a la máquina.
+Hay funciones que pedirán información externa, a esto le llamamos _parámetros_. Esto podemos decir que son las cosas que le damos a la máquina.
 
 ```Java
 System.out.println("Hola");
@@ -47,6 +47,7 @@ public class Funciones {
 ```
 
 Si ejecutamos esto veremos:
+
 ```
 BUENAS TARDES
 ```
@@ -57,13 +58,13 @@ Ya deberías saber que `saludo` contiene `"Buenas tardes"` que es un `String`.
 
 La función `saludo.toUpperCase()` es una función que devuelve el `String` en mayúsculas, si `saludo` era `"Buenas tardes"`, ahora será `"BUENAS TARDES"`.
 
-Ahora al resultado de esta función lo estamos pasando como *parámetro* a `System.out.println` para verlo por consola.
+Ahora al resultado de esta función lo estamos pasando como _parámetro_ a `System.out.println` para verlo por consola.
 
 Lo mismo podemos hacer con `saludo.toLowerCase()`. La cual devolverá `buenas tardes`.
 
 Si te das cuenta `saludo` y `toUpperCase` están unidos por un punto. Este punto es una forma de acceder dentro de.
 
-Al hacer `saludo.toUpperCase` estamos accediendo a `toUpperCase` que está dentro de `saludo`. A estos se le llaman `métodos`, funciones que están dentro de otros objetos. A los `métodos` los puedes entender como acciones que puedes realizar con el objeto. 
+Al hacer `saludo.toUpperCase` estamos accediendo a `toUpperCase` que está dentro de `saludo`. A estos se le llaman `métodos`, funciones que están dentro de otros objetos. A los `métodos` los puedes entender como acciones que puedes realizar con el objeto.
 
 Por ejemplo `toUpperCase()` transforma el `String` en mayúsculas.
 
@@ -123,4 +124,4 @@ Aquí le sumo `5` para demostrar que sí devolvió un número.
 15
 ```
 
-Ahora ya estás listo para empezar con los [ejercicios](./ejercicios/README.md).
+Ahora ya estás listo para empezar con los [ejercicios](./EJERCICIOS.md).

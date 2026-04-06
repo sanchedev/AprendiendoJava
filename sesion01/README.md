@@ -3,6 +3,7 @@
 En esta sesión aprenderemos como "imprimir" en consola.
 
 ## ¿Por qué es importante esto?
+
 Esto es muy relevante pues en muchos lenguajes de programación como **Java** la única manera de ver el paso a paso de tu código es por la consola. Por esto es importante que sepas cómo mostras cosas para que puedas **depurar**, **revisar** y **analizar** mejor tu código.
 
 Ahora sí, ¿Cómo lo hago?
@@ -54,13 +55,14 @@ Los años pasaron pero esa aún sigue una memoria viva que quedó como referenci
 
 Cuando quieres imprimir en la consola **Java** te das estás dos opciones, `print` y `println`.
 
-Ese `ln` al final del segundo significa *en una línea*.
+Ese `ln` al final del segundo significa _en una línea_.
 
 ### Print
 
 Cuando tú quieres imprimir mensajes con `print` vas a notar que los mensajes se pegan.
 
 Este código:
+
 ```java
 System.out.print("Hola");
 System.out.print("Hola");
@@ -68,6 +70,7 @@ System.out.print("Hola");
 ```
 
 Mostrará esto:
+
 ```
 HolaHolaHola
 ```
@@ -118,7 +121,7 @@ Hola
 
 Ahora inténtalo.
 
-Resuelve los [ejercicios](./ejercicios/README.md) que se encuentran en la carpeta `ejercicios` y resuelve los máximos que puedas.
+Resuelve los [ejercicios](./EJERCICIOS.md) que se encuentran en la carpeta `ejercicios` y resuelve los máximos que puedas.
 
 ## FAQ
 

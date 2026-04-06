@@ -53,14 +53,14 @@ Ahora cambiemos el código a esto:
 ```java
 // ...
         String saludo = "Saludo";
-        
+
         System.out.println(saludo);
         System.out.println(saludo);
         System.out.println(saludo);
 // ...
 ```
 
-Verás que el resultado en consola es el mismo  pero algo cambio internamente.
+Verás que el resultado en consola es el mismo pero algo cambio internamente.
 
 Analizamos
 
@@ -97,7 +97,7 @@ Que pasa si ahora reemplazamos el valor de la variable en el código.
 ```java
 // ...
         String saludo = "Hola";
-        
+
         System.out.println(saludo);
         System.out.println(saludo);
         System.out.println(saludo);
@@ -113,7 +113,6 @@ Hola
 ```
 
 Porque cuando Java revisa el interior de saludo encontrará `"Hola"` haciendo que se imprima en consola eso.
-
 
 ## Creación de variables
 
@@ -263,7 +262,7 @@ Aquí el nombre de la variable es `numero` y el nuevo valor es `20`, como este n
 
 Entonces al hacer el segundo `println`, Java revisará el contenido de `numero` y al ver que su valor es `20` se lo dará el `println` y este lo mostrará en pantalla.
 
-Es hora de los [ejercicios](./ejercicios/README.md).
+Es hora de los [ejercicios](./EJERCICIOS.md).
 
 Da lo mejor que puedas
 
