@@ -1,295 +1,168 @@
-# Sesión 02
+# Sesión 02: Guardando información
 
-En esta sesión tocaremos el tema de las variables. Qué son y por qué usarlas.
+En la sesión anterior hicimos que la computadora hablara. Hoy vamos a darle memoria.
 
-Empezemos con un ejemplo.
+## Problemas
 
-Crea un archivo `Variables.java` e imprime en líneas separadas un saludo, en este caso `Hola`.
+Abre tu editor de código, crea un archivo llamado Variables.java y escribe lo siguiente:
 
 ```java
 public class Variables {
     public static void main(String[] args) {
-        System.out.println("Hola");
-        System.out.println("Hola");
-        System.out.println("Hola");
+        System.out.println("Hola, soy un mensaje");
+        System.out.println("Hola, soy un mensaje");
+        System.out.println("Hola, soy un mensaje");
     }
 }
 ```
 
-En consola verás
+**Ejecútalo.**
+
+Verás algo así: 
 
 ```
-Hola
-Hola
-Hola
+Hola, soy un mensaje
+Hola, soy un mensaje
+Hola, soy un mensaje
 ```
 
-Pero ahora... ¿Qué pasa si queremos otro saludo? Podemos cambiarlo manualmente.
+Es el mensaje repetido tres veces.
+
+Ahora imagina que tu jefe te dice: "Ya no quiero que diga 'Hola', ahora quiero que diga 'Bienvenido'".
+
+Tendrías que cambiarlo 3 veces.
+
+Si tuvieras 1,000 líneas, estarías en problemas. Aquí es donde entran las variables.
+
+## Tu primera Variable
+
+Vamos a modificar tu código.
+
+Borra lo que está dentro del main y cámbialo por esto:
 
 ```java
-// ...
-        System.out.println("Saludo");
-        System.out.println("Saludo");
-        System.out.println("Saludo");
-// ...
+public class Variables {
+    public static void main(String[] args) {
+        String saludo = "Hola, soy una variable";
+
+        System.out.println(saludo);
+        System.out.println(saludo);
+        System.out.println(saludo);
+    }
+}
 ```
 
-Ahora veríamos
+**Pruébalo.**
+
+El resultado es el mismo, pero mira la magia.
+
+Cambia el texto "Hola, soy una variable" por "Soy un texto" solo en la primera línea.
+
+**Ejecútalo de nuevo.**
+
+¡Se actualizó en los tres println automáticamente!
+
+Solo tuviste que cambiarlo en un lugar.
+
+## ¿Qué es una Variable?
+
+Imagina que una variable es una caja etiquetada.
+
+- El Tipo: Es el tamaño/forma de la caja (¿Es para zapatos? ¿Es para libros?).
+- El Nombre: Es la etiqueta que pegas por fuera para saber qué hay dentro sin abrirla.
+- El Valor: Es el objeto que guardas dentro de la caja.
+
+## ¿Cómo crear una variable?
+
+En Java, para crear una caja debemos seguir este orden estricto:
 
 ```
-Saludo
-Saludo
-Saludo
+TipoDeDato nombre = valor;
 ```
 
-Pero es un poco costoso, ¿no?
+## Experimentando con Números
 
-Tener que cambiar manualmente todas las partes donde aparece para hacer lo que queremos.
+No todo en la vida es texto.
 
-Este es una de las razones para usar variables.
+Java necesita saber qué tipo de datos estás guardando.
 
-Ahora cambiemos el código a esto:
+Añade estas líneas debajo de tus mensajes de saludo:
 
 ```java
-// ...
-        String saludo = "Saludo";
+int edad = 17;
+double estatura = 1.75;
 
-        System.out.println(saludo);
-        System.out.println(saludo);
-        System.out.println(saludo);
-// ...
+System.out.println(edad);
+System.out.println(estatura);
 ```
 
-Verás que el resultado en consola es el mismo pero algo cambio internamente.
+Analicemos lo que acabas de escribir:
 
-Analizamos
+ * int: Es para números enteros (sin decimales).
+ * double: Es para números con punto decimal.
+ * String: Es para textos (siempre van entre comillas " ").
 
-En la primera línea estamos creando una `variable` con el nombre `saludo`.
+## Reglas para los Nombres
 
-Y en cada paréntesis de los `println`s está `saludo` sin las comillas.
+No puedes llamar a tus variables como sea. Java tiene reglas:
 
-## Variables
+- No empezar con números:
+  - 1puesto (ERROR)
+  - puesto1 (correcto)
+- Sin espacios:
+  - mi edad (ERROR)
+  - miEdad (correcto)
+- Sensible a mayúsculas:
+  - nombre y Nombre son dos cajas distintas.
 
-Una variable es una forma de almacenar valores para usarlos después. Puedes verlo como una caja 📦.
+### EL estilo CamelCase
 
-Está caja tiene una etiqueta para identificarla, este sería el nombre de la variable.
+En Java, si el nombre tiene varias palabras, la primera va en minúscula y las siguientes empiezan con Mayúscula.
 
-Está caja puede contener cosas dentro, lo que sería el valor que tiene.
+Ejemplos:
 
-Que pasa cuando creamos una variable llamada `saludo` con el valor de `"Saludo"`. Pues estamos tomando una caja, le ponemos la etiqueta `saludo` y dentro colocamos el texto `Saludo`.
+- nombreDelUsuario (nombre del usuario)
+- miEdad (mi edad)
 
-Así que cuando usemos la palabra `saludo` sin las comillas en el código veremos el contenido que tiene dentro. Algo así como abrir la caja y revisar su interior.
+## Errores
 
-Entonces al hacer
+Para entender a Java, hay que romperlo.
 
-```java
-System.out.println(saludo);
-```
+Intenta hacer estos cambios en tu archivo y mira qué pasa en la consola:
 
-Java verá que hay dentro de `saludo`, al hacerlo encontrará `"Saludo"` así que imprimirá en consola
+ * El error de tipo: Cambia `int edad = 17;` por `int edad = "Diecisiete";`.
+   * ¿Qué dice el error? Java te dirá que no puede meter un texto en una caja de números.
+ * El error de las comillas: Intenta escribir `System.out.println(edad);` pero ponle comillas: `System.out.println("edad");`.
+   * ¿Qué pasó? Ya no muestra el número `17`, sino la palabra literal `edad`.
 
-```
-Saludo
-```
-
-Que pasa si ahora reemplazamos el valor de la variable en el código.
-
-```java
-// ...
-        String saludo = "Hola";
-
-        System.out.println(saludo);
-        System.out.println(saludo);
-        System.out.println(saludo);
-// ...
-```
-
-Veremos
-
-```
-Hola
-Hola
-Hola
-```
-
-Porque cuando Java revisa el interior de saludo encontrará `"Hola"` haciendo que se imprima en consola eso.
-
-## Creación de variables
-
-Ahora te preguntarás, ¿Cómo creo una variable?
-
-La respuesta es simple, tienes que seguir está estructura:
-
-`[tipo de dato] [nombre de la variable] = [valor de la variable];`
-
-Si vemos lo que teníamos antes podemos deducir que en: `String saludo = "Hola";`
-
-- El tipo de dato es `String`
-- El nombre es `saludo`
-- El valor que tiene dentro es `"Hola"`
-
-### Tipo de Dato
-
-Al crear una variable le tienes que especificar que tipo de cosas puede tener dentro, como por ejemplo: textos (`String`), números (enteros `int`, decimales `double`), etc...
-
-Es este caso el tipo es `String` por lo que estamos creando una variable que dentro puede contener un texto.
-
-### Nombre
-
-El nombre de una variable es importante, no puede contener espacios ni números al inicio por lo que `mi variable` y `1numero` son nombres inválidos. Además deben ser faciles de recordar y descriptivo para no cometer errores al usarlo.
-
-Por ejemplo:
-
-- `nombre`: Seguro contiene un `String`
-- `edad`: Seguro contiene un `int`
-- `altura`: Seguro contiene un `double`
-
-### Valor
-
-Después del nombre va un signo `=` y luego el valor. Este valor debe estar acorde al tipo de dato que le dijimos a la variable que puede contener.
-
-Si una variable es un `String` entonces solo le podremos pasar textos entre comillas `""`.
-Si es un `int` solo números enteros.
-Y si es un `double` solo números decimales o terminados con `.0`.
-
-Así que:
-
-- `"Hola"`: Es un `String`
-- `20`: Es un `int`
-- `2.5`: Es un `double`
-
-Siempre teniendo en cuenta que el tipo de dato y el valor deben estar relacionados.
-Si haces:
-
-```Java
-String nombre = 20;
-```
-
-Java detectará un error y no será capaz de ejecutar tu programa porque `String` e `int` no están relacionados.
-
-Por esto si hacemos:
-
-```Java
-double decimal = 2;
-```
-
-Si pasará pues `int` puede ser pasado como `double` fácilmente pero al revés **NO**.
-
-```Java
-int edad = 17.8;
-```
-
-Esto dará un error.
-
-## Variables sin comillas
-
-Cuando declaras una variable y luego la quieres usar, tienes que hacer referencia al nombre que le habías puesto.
-
-Está referencia se hace sin comillas porque no es un `String` o texto sino una variable.
-
-Veamos un ejemplo
-
-```Java
-String saludo = "Hola";
-
-System.out.println(saludo);
-System.out.println("saludo");
-```
-
-En consola se mostrará
-
-```
-Hola
-saludo
-```
-
-**¿Se entiende el porqué?**
-
-Al poner las comillas Java interpreta que lo que quieres hacer es poner un texto plano, por eso inprime `saludo` y no `Hola`.
+> Dato: Sin comillas buscas la caja por su etiqueta. Con comillas hablas directamente del texto.
 
 ## Reasignación
 
-Vayamos usando otro tipo de dato.
+Una variable se llama así porque su valor puede variar.
 
-Crea un archivo de **Java** llamado `Reasignando.java`.
+Mira este ejemplo y agrégalo a tu código:
 
-Dentro del `main` pondremos lo siguiente:
+```java
+int puntos = 10;
+Hola, soy un mensaje
+System.out.print("Puntos: ");
+System.out.println(puntos);
 
-```Java
-int numero = 15;
-
-System.out.println(numero);
+puntos = 20; // Sacamos el 10 y metemos el 20
+System.out.print("Puntos actualizados: ");
+System.out.println(puntos);
 ```
 
-Aquí solo creamos una variable y la mostramos en pantalla, por lo que veremos al ejecutar será:
+**Nota**: Fíjate que la segunda vez no escribimos int. La caja ya está creada, solo le estamos cambiando lo que tiene dentro.
 
-```
-15
-```
 
-Hasta ahora es algo que ya habíamos visto.
+## Reto de salida
 
-La **Reasignación** es cambiar el valor de una variable en tiempo de ejecución.
+Antes de ir a los ejercicios, intenta crear una variable `double` para el precio de una galleta y una variable `String` para el nombre de la galleta.
 
-```Java
-int numero = 15;
+**Imprime ambas en la consola.**
 
-System.out.println(numero);
+Si lograste que se vea en pantalla, estás listo para lo que viene.
 
-numero = 20;
-
-System.out.println(numero);
-```
-
-Con este código ahora veremos:
-
-```
-15
-20
-```
-
-Si te das cuenta en medio de los dos `println`s ejecutamos está línea:
-
-```Java
-numero = 20;
-```
-
-Cuando quieres reemplazar el valor que tiene una variable por otro valor se hace con esta estructura:
-
-`[nombre de la variable] = [nuevo valor];`
-
-Aquí el nombre de la variable es `numero` y el nuevo valor es `20`, como este nuevo valor cumple con ser un entero `int` como lo declaramos al crear la variable, la variable ahora tendrá dentro un valor diferente.
-
-Entonces al hacer el segundo `println`, Java revisará el contenido de `numero` y al ver que su valor es `20` se lo dará el `println` y este lo mostrará en pantalla.
-
-Es hora de los [ejercicios](./EJERCICIOS.md).
-
-Da lo mejor que puedas
-
-## Uso de la palabra clave `var`
-
-Cuando entiendas a usar bien las variables y puedas hacer los ejercicios propuestos correctamente sin problemas podrás entender está sección.
-
-Puede que te hayas dado cuenta que es un poco redundante tener que poner indicar el tipo de dato manualmente, como cuando al incio de una variable pones `String` cuando el valor es un `String` o poner `int` cuando el valor es `10`. Para esto se creo `var`.
-
-Al usar var la estructura de creación de una variable no cambia mucho:
-
-`var [nombre] = [valor];`
-
-Cuando usas `var` la variable obtendrá el tipo de valor del valor que le pases.
-
-Por ejemplo, podríamos pasar de:
-
-```Java
-String saludo = "Hola";
-```
-
-a
-
-```Java
-var saludo = "Hola";
-```
-
-Realmente los dos son lo mismo, la única diferencia es que al primero el tipo de dato es explícito y en el segundo se infiere.
-
-`"Hola"` es un `String` por lo que el tipo de dato de `saludo` será `String`.
+¡Ahora sí, a los [EJERCICIOS](./EJERCICIOS.md)!
