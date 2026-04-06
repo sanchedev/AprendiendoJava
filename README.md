@@ -9,7 +9,7 @@ Este no es solo un repositorio de código; es una guía paso a paso diseñada pa
 Aquí tienes el progreso de nuestras clases. Haz clic en los enlaces para ir a la explicación detallada.
 
 | Sesión | Título | Temas Clave |
-|---|---|---|---|
+|---|---|---|
 | [01](./sesion01/README.md)| Primeros Pasos | print vs println |
 | [02](./sesion02/README.md) | La Memoria | Variables, Tipos de datos (int, String), Asignación |
 | [03](./sesion03/README.md) | Máquinas de Retorno | Métodos, Math.pow, Integer.parseInt |
