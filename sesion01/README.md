@@ -1,202 +1,92 @@
-# Sesión 01
+# Sesión 01: Hablando con la Computadora
 
-En esta sesión aprenderemos como "imprimir" en consola.
+En esta primera sesión aprenderemos a hacer que nuestro programa nos "hable". En programación, esto se conoce como **imprimir en consola**.
 
-## ¿Por qué es importante esto?
+## ¿Qué es la Consola y por qué la usamos?
 
-Esto es muy relevante pues en muchos lenguajes de programación como **Java** la única manera de ver el paso a paso de tu código es por la consola. Por esto es importante que sepas cómo mostras cosas para que puedas **depurar**, **revisar** y **analizar** mejor tu código.
+Imagina que la consola es como el chat entre tú y tu programa. Como aún no estamos creando ventanas con botones o colores, la consola es el único lugar donde podemos ver si nuestro código está funcionando correctamente.
+Usamos la impresión para:
 
-Ahora sí, ¿Cómo lo hago?
+ * Ver resultados: "El resultado de la suma es 10".
+ * Rastrear errores: "El programa llegó hasta este punto sin caerse".
 
-Pues en esta sesión te enseñaré dos formas y de las más usadas.
+## System.out.println
 
-- `System.out.print`
-- `System.out.println`
+Para mostrar algo en pantalla en Java, usamos una frase larga. No te asustes, vamos a desarmarla como un juguete:
 
-Ahora te parecerá raro.
+| Parte | ¿Qué significa? |
+|-------|-----------------|
+| System | Es el sistema de tu computadora. |
+| .out | Significa "salida" (queremos sacar información hacia afuera). |
+| .println | Es la acción de "imprimir una línea" (del inglés print line). |
 
-Primero, está en inglés.
+> *Dato curioso*: Se dice `imprimir` porque hace muchos años las computadoras no tenían pantallas; el resultado salía literalmente en una hoja de papel.
 
-Segundo, tiene puntos.
+## print vs println
 
-Tercero, por qué se llama imprimir (print).
+Java te da dos opciones para mostrar texto.
 
-Y cuarto, por qué el segundo tiene un `ln` al final.
+La diferencia es sutil pero muy importante:
 
-Aquí te cuento cada uno paso por paso.
+### System.out.print (Sin el "ln")
 
-## Inglés
-
-La gran mayoría (por no decir todos) de lenguajes de programación están hechos para ser escritos y leídos en inglés, en estás sesiones escribiremos el código en una especie de Spanglish pero lo óptimo sería hacerlo completamente en inglés, no solo porque es un idioma mundial, sino también para no confundirnos al escribir.
-
-## Los puntos entre palabras
-
-Por el momento quédate con la idea de que esos puntos sirven para separar ideas de una misma operación.
-
-Léelo así.
-
-Si tenemos `System.out.println`.
-
-Entonces podemos verlo como:
-
-- `System`: Estamos accediendo al sistema
-- `out`: Entramos a la salida (la consola)
-- `println`: Imprimimos en una línea
-
-Entonces la acción que queremos realizar es Imprimir en una línea en la consola del sistema.
-
-## Imprimir
-
-Antes de que existieran las pantallas y la consola, el resultado de una operación se imprimía a papel con una impresora conectada.
-
-Los años pasaron pero esa aún sigue una memoria viva que quedó como referencia en muchos lenguajes de programación y habla común entre desarrolladores, si escuchas imprime x y hablamos entonces muy seguramente es para mostrar eso x en consola.
-
-## Diferencia
-
-Cuando quieres imprimir en la consola **Java** te das estás dos opciones, `print` y `println`.
-
-Ese `ln` al final del segundo significa _en una línea_.
-
-### Print
-
-Cuando tú quieres imprimir mensajes con `print` vas a notar que los mensajes se pegan.
-
-Este código:
+Imprime el texto y deja el cursor ahí mismo, en la misma línea. Si escribes otro comando abajo, se pegará al anterior.
 
 ```java
 System.out.print("Hola");
-System.out.print("Hola");
-System.out.print("Hola");
+System.out.print("Mundo");
 ```
 
-Mostrará esto:
+Resultado:
 
 ```
-HolaHolaHola
+HolaMundo
 ```
 
-Creo que puedes notar el problema... Usar `print` no hace un salto de línea al final por lo que el cursor se queda al final de una palabra cuando inicia la otra. Por eso se pegan.
+### System.out.println (Con el "ln")
 
-Inténtalo por tu cuenta.
-
-Crea un archivo Java Class y llámale `HolaMundo` y pega este código donde coincida:
+Imprime el texto y luego hace un salto de línea (como presionar "Enter"). El siguiente mensaje aparecerá abajo.
 
 ```java
-public class HolaMundo {
-    public static void main(String[] args) {
-        System.out.print("Hola");
-        System.out.print("Hola");
-        System.out.print("Hola");
-    }
-}
+System.out.println("Hola");
+System.out.println("Mundo");
 ```
 
-Ejecutalo y verás que todo se pega.
+Resultado:
 
-Aquí es donde entra `println`.
+```
+   Hola
+   Mundo 
+```
 
-### Println
+## ¿Por qué hay tanto código extra al crear un archivo?
 
-Vuelve a tu archivo `HolaMundo.java` y pon al final de cada `print` un `ln` para que te quede así:
+Cuando creas un archivo nuevo, verás que Java escribe varias líneas por ti. No intentes memorizar esto todavía, solo entiéndelo como una matrioshka 🪆 (una caja dentro de otra):
+
+ * La Clase (lo que va después del `public class`): Es el nombre de tu archivo. Todo tu código debe vivir aquí dentro.
+ * El Método Main (`public static void main`): Es la puerta de entrada. Cuando le das a "Play", Java busca esta línea exacta para empezar a leer. Si no está, el programa no arranca.
 
 ```java
-public class HolaMundo {
-    public static void main(String[] args) {
-        System.out.println("Hola");
-        System.out.println("Hola");
-        System.out.println("Hola");
-    }
-}
+public class HolaMundo { // 📦 Caja Grande (El archivo)
+    public static void main(String[] args) { // 🚪 Puerta de entrada
+        
+        // Aquí va tu código (Lo que el programa hará)
+        System.out.println("¡Lo logré!");
+        
+    } // 🚪 Cerramos la puerta
+} // 📦 Cerramos la caja
 ```
 
-Ahora ejecútalo.
+***Para evitar errores:***
 
-```
-Hola
-Hola
-Hola
-```
+ * El punto y coma (;): Es como el punto final de una oración. Si lo olvidas, Java no sabrá dónde termina tu instrucción.
+ * Las comillas (" "): Se usan para texto.
+   * "1 + 1" mostrará literalmente `1 + 1`.
+   * 1 + 1 (sin comillas) mostrará el resultado: `2`.
+ * Mayúsculas: Java es muy estricto. No es lo mismo system que System. Fíjate bien en la S mayúscula.
 
-¿Notas el cambio?
+## A practicar
 
-Ahora inténtalo.
+No te quedes solo con la lectura. Ve a la carpeta de ejercicios y pon a prueba lo que aprendiste:
 
-Resuelve los [ejercicios](./EJERCICIOS.md) que se encuentran en la carpeta `ejercicios` y resuelve los máximos que puedas.
-
-## FAQ
-
-### ¿Cómo es la estructura?
-
-Cuando tú quieres imprimir algo en consola usas `print` o `println`.
-
-Siempre de esta forma:
-
-```java
-System.out.print("[tu mensaje]");
-```
-
-:: Reemplaza `[tu mensaje]` con lo que quieras mostrar.
-
-! No te olvides de las comillas dobles (`"`), esto le dice a **Java** que lo que tiene dentro es una cadena de texto y no código que puede ejecutar. No es lo mismo `"1 + 1"` que `1 + 1`.
-
-El primero se mostraría como tal:
-
-```
-1 + 1
-```
-
-En cambio el segundo mostraría:
-
-```
-2
-```
-
-### ¿Por qué mi archivo tiene tanto texto si lo acabo de crear?
-
-No te explicaré que es técnicamente cada palabra que pone el archivo pero si puedo ayudarte a entender el porqué está ahí.
-
-Veamos el archivo `HolaMundo.java`
-
-```java
-public class HolaMundo {
-    public static void main(String[] args) {
-        // Aquí estarían los prints
-    }
-}
-```
-
-Para el ejemplo ignoraremos los `print`s.
-
-Desestructuraremos primero línea por línea.
-
-`public`: Público hace referencia a que podemos acceder desde otro archivo a esta `class`. Esencial para poder ejecutar el archivo.
-
-`class`: Recordemos que habíamos creado un `Java Class`. Pues aquí está la `clase`.
-
-`HolaMundo`: Este es el nombre que nosotros le pusimos al archivo. Si cambiamos el nombre del archivo, aquí también cambiaría.
-
-`{`: Esto es importante, hay veces que cuando aparece este símbolo es porque **abre** un bloque de código. Y si abrimos algo, lo tenemos que cerrar, por eso luego veremos que nos encontramos con un `}`.
-
-Segunda línea
-
-`public`: Que se puede acceder de cualquier lado.
-
-`static`: Es estático, no necesitas un proceso para poder acceder porque siempre está ahí.
-
-`void`: Que no regresa nada a cambio.
-
-`main`: Nombre de este `método`.
-
-`(...)`: Ignoremos eso por ahora.
-
-`{`: Abrimos otro bloque más, ahora tenemos dos `}` pendientes.
-
-En resumen, cuando quieres ejecutar un archivo **Java** te obliga a tener esto en tu código porque representa un **punto de entrada** para tu programa. Es decir, el programa se podrá ejecutar desde ese archivo.
-
-Tercera línea
-
-`}`: Cerramos uno
-
-Cuarta línea
-
-`}`: Cerramos el otro
+[Enlace a los ejercicios de la Sesión 01](./EJERCICIOS.md)
