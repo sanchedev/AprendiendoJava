@@ -135,7 +135,8 @@ Intenta hacer estos cambios en tu archivo y mira qué pasa en la consola:
  * El error de las comillas: Intenta escribir `System.out.println(edad);` pero ponle comillas: `System.out.println("edad");`.
    * ¿Qué pasó? Ya no muestra el número `17`, sino la palabra literal `edad`.
 
-> Dato: Sin comillas buscas la caja por su etiqueta. Con comillas hablas directamente del texto.
+> [!NOTE]
+> Sin comillas buscas la caja por su etiqueta. Con comillas hablas directamente del texto.
 
 ## Reasignación
 
@@ -145,7 +146,6 @@ Mira este ejemplo y agrégalo a tu código:
 
 ```java
 int puntos = 10;
-Hola, soy un mensaje
 System.out.print("Puntos: ");
 System.out.println(puntos);
 
@@ -154,7 +154,8 @@ System.out.print("Puntos actualizados: ");
 System.out.println(puntos);
 ```
 
-**Nota**: Fíjate que la segunda vez no escribimos int. La caja ya está creada, solo le estamos cambiando lo que tiene dentro.
+> [!NOTE]
+> Fíjate que la segunda vez no escribimos `int`. La caja ya está creada, solo le estamos cambiando lo que tiene dentro.
 
 
 ## Reto de salida
