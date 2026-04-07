@@ -42,6 +42,10 @@ Para obtener un booleano, solemos hacer "preguntas" matemáticas. Java nos respo
 
 Es como un guardia de seguridad. Si cumples la regla, te deja pasar al bloque de código.
 
+![Imagen de estructura|255](./imagenes/EJEMPLO01.excalidraw.png)
+
+Aquí un ejemplo con un detector si se es mayor de edad.
+
 ```java
 int edad = 17;
 
@@ -52,9 +56,14 @@ if (edad >= 18) {
 
 Si ejecutas esto con `17`, no pasará nada. El código dentro de las llaves { } simplemente se **ignora**.
 
+Visualmente podría ser así:
+
+
+![Imagen de estructura 2|255](./imagenes/EJEMPLO02.excalidraw.png)
+
 ### El else (De lo contrario)
 
-Aquí es donde corregimos el código. El else no lleva condición, porque es lo que ocurre automáticamente cuando el `if` falla.
+Aquí es donde corregimos el código. El else no lleva condición, porque es lo que ocurre automáticamente cuando el **`if` falla**.
 
 ```java
 int edad = 17;
@@ -67,6 +76,9 @@ if (edad >= 18) {
 }
 ```
 
+Gráficamente:
+
+![Imagen de estructura 3|255](./imagenes/EJEMPLO03.excalidraw.png)
 ## Codeando
 
 Crea un archivo llamado `Acceso.java` y prueba este código. Vamos a mezclar lo que aprendimos de `Scanner` con `if-else`:
@@ -95,6 +107,10 @@ public class Acceso {
     }
 }
 ```
+
+Gráficamente podemos verlo como:
+
+![Imagen de estructura 4|255](./imagenes/EJEMPLO04.excalidraw.png)
 
 Analicemos el flujo:
 
