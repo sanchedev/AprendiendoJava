@@ -67,14 +67,11 @@ Cuando creas un archivo nuevo, verás que Java escribe varias líneas por ti. No
  * El Método Main (`public static void main`): Es la puerta de entrada. Cuando le das a "Play", Java busca esta línea exacta para empezar a leer. Si no está, el programa no arranca.
 
 ```java
-public class HolaMundo { // 📦 Caja Grande (El archivo)
-    public static void main(String[] args) { // 🚪 Puerta de entrada
-        
-        // Aquí va tu código (Lo que el programa hará)
-        System.out.println("¡Lo logré!");
-        
-    } // 🚪 Cerramos la puerta
-} // 📦 Cerramos la caja
+public class HolaMundo {
+    public static void main(String[] args) {
+        System.out.println("Hola mundo");
+    }
+}
 ```
 
 ***Para evitar errores:***
